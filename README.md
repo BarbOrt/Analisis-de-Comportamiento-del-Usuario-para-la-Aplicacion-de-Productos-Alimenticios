@@ -1,5 +1,5 @@
 # Análisis de Comportamiento del Usuario para la Aplicación de Productos Alimenticios
-# (Proyecto Integrado)
+# Proyecto Integrado
 
 ## Descripción del Proyecto
 
