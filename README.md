@@ -1,52 +1,42 @@
-# Análisis de Comportamiento del Usuario para la Aplicación de Productos Alimenticios
+# User Behavior Analysis for Food Products App
 
-## Descripción del Proyecto
+## Introduction
 
-Se realizó un análisis del comportamiento del usuario para una aplicación de productos alimenticios con el objetivo de estudiar el embudo de ventas y evaluar los resultados de un test A/A/B. El análisis ayudó a comprender cómo los usuarios llegan a la etapa de compra y a decidir sobre posibles cambios en el diseño de la aplicación.
+In the dynamic landscape of a burgeoning company specializing in food product sales, understanding user behavior and evaluating the impact of design changes in the mobile application are essential for optimizing the customer experience and enhancing conversion rates. This project focuses on two main aspects: a comprehensive sales funnel analysis and the assessment of a typographic redesign through an A/A/B test.
 
-## Instrucciones para Completar el Proyecto
+## Objectives
 
-### Paso 1: Abrir y Leer los Datos
+1. **Sales Funnel Analysis:** Identify key stages where users drop off and calculate conversion rates to improve the customer journey.
+2. **Typographic Redesign Evaluation:** Assess the impact of a new typographic design on user behavior through an A/A/B test to determine its effect on user experience and engagement.
 
-- **Descarga y Preparación**:
-  - Se abrió el archivo de datos y se revisó la información general.
+## Data Analysis Steps
 
-### Paso 2: Preparación de los Datos
+1. **Import Libraries and Load Data:**
+   - Import necessary libraries and perform a preliminary analysis of the dataset.
 
-- **Transformación y Limpieza**:
-  - Se renombraron las columnas para facilitar el análisis.
-  - Se verificaron tipos de datos y valores ausentes, corrigiendo según fuera necesario.
-  - Se agregaron columnas de fecha y hora separadas.
+2. **Data Preparation:**
+   - Rename columns, handle missing values, and create additional columns to facilitate a thorough analysis.
 
-### Paso 3: Estudio de los Datos
+3. **Data Exploration and Validation:**
+   - Count events and users, analyze the temporal distribution of data, and ensure data integrity.
 
-1. **Resumen de Eventos**:
-   - Se determinó el número total de eventos y usuarios.
-   - Se calculó el promedio de eventos por usuario.
-   - Se analizó el periodo cubierto por los datos y se trazó un histograma por fecha y hora.
+4. **Sales Funnel Analysis:**
+   - Identify critical events, calculate conversion rates, and detect stages where users encounter issues.
 
-2. **Embudo de Eventos**:
-   - Se identificaron los eventos y su frecuencia.
-   - Se calculó la proporción de usuarios que realizaron cada acción y el embudo de eventos.
-   - Se identificaron las etapas con mayor pérdida de usuarios y el porcentaje que completa todo el proceso hasta la compra.
+5. **A/A/B Experiment Evaluation:**
+   - Compare the control groups with the test group to determine if the typographic change significantly impacts user behavior.
 
-### Paso 4: Análisis del Test A/A/B
+## Results
 
-1. **Comparación de Grupos de Control**:
-   - Se analizaron los grupos de control (246 y 247) para verificar si había diferencias significativas entre ellos.
-   - Se evaluó la proporción de usuarios que realizaron el evento más popular en cada grupo de control y se verificó la significancia estadística.
+- **Sales Funnel Analysis:** Identified key drop-off points and calculated conversion rates to optimize the customer journey.
+- **Typographic Redesign Evaluation:** Applied Bonferroni correction to account for multiple comparisons, revealing that no event showed a significant difference in proportions between the experimental and control groups.
 
-2. **Evaluación del Grupo de Prueba**:
-   - Se compararon los resultados del grupo con fuentes alteradas (248) con los grupos de control.
-   - Se realizaron pruebas para cada evento y se compararon los resultados con los de los grupos de control combinados.
+## Key Findings
 
-3. **Nivel de Significación**:
-   - Se estableció un nivel de significación para las pruebas estadísticas y se calcularon cuántas pruebas se realizaron.
+- The typographic change did not produce statistically significant differences in user behavior compared to the control groups.
+- The sales funnel analysis highlighted critical stages for potential improvement in the customer journey.
 
-## Descripción de los Datos
+## Future Work
 
-El dataset contiene información sobre eventos de usuarios con las siguientes columnas:
-- `EventName`: Nombre del evento
-- `DeviceIDHash`: Identificador único del usuario
-- `EventTimestamp`: Hora del evento
-- `ExpId`: Número del experimento (246 y 247 para grupos de control, 248 para grupo de prueba)
+- Conduct further analysis to explore other contextual factors that may influence user behavior.
+- Continue to monitor application performance and collect additional data as new versions and design changes are implemented.
